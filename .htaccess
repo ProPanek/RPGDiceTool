@@ -1,0 +1,9 @@
+
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^/?index/?$    index.php    [NC,L]    # Handle requests for "pet-care"
+RewriteRule    ^/?karta/?$   /sesja_tyrania/karta.php    [NC,L]    # Handle requests for "pet-care"
+RewriteRule    ^/?items/?$   /sesja_tyrania/items.php    [NC,L]    # Handle requests for "pet-care"
+RewriteRule    ^/?alchemia/?$   /sesja_tyrania/alchemia.php    [NC,L]    # Handle requests for "pet-care"
+RewriteRule    ^/?kowal/?$   /sesja_tyrania/kowal.php    [NC,L]    # Handle requests for "pet-care"
+RewriteRule    ^/?admin/?$   /tyraniaangvalion/admin.php    [NC,L]    # Handle requests for "pet-care"
+RewriteRule    ^/?docs/?$   /sesja_tyrania/docs.php    [NC,L]    # Handle requests for "pet-care"

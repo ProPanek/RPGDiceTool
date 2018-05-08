@@ -1,0 +1,46 @@
+body
+{
+	margin: 0;
+}
+.loader-background
+{
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url("../loader/tlo.png");
+    z-index: 100000000000;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.loader-content
+{
+    position: absolute;
+    top: calc(50% - 93px);
+    left: calc(50% - 129px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.loader-content img
+{
+    margin-bottom: 15px;
+    width: 257px;
+    height: 150px;
+}
+.loader-loading
+{
+    /*rgba(192, 57, 43,1.0)*/
+    margin: 0 auto;
+    border: 4px solid rgba(236, 240, 241,0.2);
+    border-top: 4px solid gold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

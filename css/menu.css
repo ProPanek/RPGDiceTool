@@ -1,0 +1,103 @@
+#menu {
+  height: 30px;
+  font-family: sans-serif;
+  background-color: rgba(22, 8, 7, 0.7);
+  z-index: 1;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  white-space: nowrap;
+}
+
+#menu ul {
+  opacity: 0.95;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+#menu_left {
+  border-left: 2px solid rgb(30, 139, 146);
+}
+
+#menu li {
+  /*border-left: 2px solid rgba(22, 8, 7, 0.9);*/
+  float: left;
+  flex: 1;
+  text-align: center;
+}
+#menu li > a {
+  width: 100%;
+}
+#menu li > button {
+  width: 100%;
+}
+#menu li:last-child {
+  border-right: none;
+}
+
+#menu li a, #menu button {
+  height: 30px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#menu li a:hover, header button:hover {
+  transition: background-color 1s;
+  background-color: rgba(22, 8, 7, 1);
+}
+
+#menu li ul {
+  display: none;
+}
+
+#menu li:hover ul {
+  position: absolute;
+  display: block;
+}
+
+body.index a.index, body.umowy a.umowy, body.user_data a.user_data, body.post_umowy a.post_umowy, body.register a.register, body.reset_passwd a.reset_passwd, body.user_list a.user_list {
+  background-color: rgb(30, 139, 146) !important;
+  cursor: default;
+}
+
+header input, header button {
+  background: grey;
+}
+
+header input {
+  background-color: rgba(22, 8, 7, 1.0);
+  width: 100px;
+  /*margin-top: 1%;*/
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  height: 28px;
+}
+
+header select {
+  background-color: rgba(22, 8, 7, 1.0);
+  width: 100%;
+  /*margin-top: 1%;*/
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  height: 28px;
+}
+
+header button {
+  background-color: rgba(22, 8, 7, 0.1);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}

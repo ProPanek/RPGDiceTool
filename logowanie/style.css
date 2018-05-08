@@ -1,0 +1,80 @@
+body
+{
+	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #ecf0f1;
+}
+
+::selection {
+  background: rgba(192, 57, 43,0.5); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(192, 57, 43,0.5); /* Gecko Browsers */
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.content
+{
+    background-image: url('pattern.png');
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.box-logowanie
+{
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    background-color: rgba(9,9,9,0.0);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    top: calc(50% - 180px);
+    left: calc(50% - 185px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.box-rejestracja
+{
+    position: absolute;
+    width: 320px;
+    height: 290px;
+    background-color: rgba(9,9,9,0.0);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    top: calc(50% - 180px);
+    left: calc(50% - 185px);
+    opacity: 0.0;
+    z-index: -999;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.content input
+{
+    margin-top: 2px;
+    margin: 0 auto;
+    width: 320px;
+    background-color: rgba(9,9,9,1.0);
+    padding: 3px;
+    border: 1px solid #fcf44b;
+    padding: 3px;
+    border-radius: 5px;
+    color: #ecf0f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+.content input:focus {
+    outline-color: rgba(192, 57, 43,1.0);
+}
